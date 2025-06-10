@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Asana Recommendations - Healthcare Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1599447292325-2cffaa79bcbb');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-heartbeat"></i> Healthcare Assistant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="medicine.html" id="medicineNav"><i class="fas fa-pills"></i> Medicine</a></li>
+                <li><a href="diet.html" id="dietNav"><i class="fas fa-utensils"></i> Diet</a></li>
+                <li><a href="yoga.html" class="active"><i class="fas fa-spa"></i> Yoga</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h2>Yoga Asanas for <span id="symptomName">your symptom</span></h2>
+            <p>Practice these yoga poses regularly for relief and improved health.</p>
+        </div>
+
+        <div class="detail-container">
+            <div class="yoga-card">
+                <div class="yoga-header">
+                    <h3 id="asanaName">Please select a symptom on the home page first</h3>
+                    <p id="asanaDescription">Yoga asanas can help alleviate your symptoms and improve overall well-being.</p>
+                </div>
+                
+                <div class="yoga-content">
+                    <div class="yoga-image-container">
+                        <div class="pose-image">
+                            <img id="yogaImage" src="https://images.unsplash.com/photo-1579566538101-636bbaed1b05" alt="Yoga Pose" class="yoga-img">
+                        </div>
+                    </div>
+                    
+                    <div class="video-container">
+                        <h4>Video Demonstration</h4>
+                        <div id="videoEmbed" class="video-embed">
+                            <p>Select a symptom to see video demonstration</p>
+                        </div>
+                        <a href="#" id="videoLink" class="video-btn" target="_blank">
+                            <i class="fab fa-youtube"></i> Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="yoga-instructions">
+                    <h4>Practice Instructions:</h4>
+                    <ol id="yogaInstructions">
+                        <li>Start in a comfortable position</li>
+                        <li>Follow the video guide for detailed instructions</li>
+                        <li>Practice this asana for 5-10 minutes daily</li>
+                        <li>Always listen to your body and avoid any movements that cause pain</li>
+                    </ol>
+                </div>
+                
+                <div class="additional-poses">
+                    <h4>Other Beneficial Poses:</h4>
+                    <div class="pose-gallery">
+                        <div class="pose-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6" alt="Yoga Pose" class="thumbnail-img">
+                            <p>Tadasana</p>
+                        </div>
+                        <div class="pose-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1599447332412-6bc6830c815a" alt="Yoga Pose" class="thumbnail-img">
+                            <p>Balasana</p>
+                        </div>
+                        <div class="pose-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1531714680149-1bde6d4d4c5c" alt="Yoga Pose" class="thumbnail-img">
+                            <p>Shavasana</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="caution-box">
+                <h3><i class="fas fa-exclamation-circle"></i> Practice with Care</h3>
+                <p>Consult with a healthcare professional before starting any new exercise routine, especially if you have existing health conditions. Stop immediately if you experience pain.</p>
+            </div>
+            
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Recommendations
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Rights reserved from WHO</p>
+    </footer>
+
+    <script src="recommendations.js"></script>
+    <script src="yoga.js"></script>
+</body>
+</html>

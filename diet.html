@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan Recommendations - Healthcare Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1547592180-85f173990554');
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-heartbeat"></i> Healthcare Assistant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="medicine.html" id="medicineNav"><i class="fas fa-pills"></i> Medicine</a></li>
+                <li><a href="diet.html" class="active"><i class="fas fa-utensils"></i> Diet</a></li>
+                <li><a href="yoga.html" id="yogaNav"><i class="fas fa-spa"></i> Yoga</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h2>Diet Plan for <span id="symptomName">your symptom</span></h2>
+            <p>A healthy diet can help manage symptoms and improve overall wellbeing.</p>
+        </div>
+
+        <div class="detail-container">
+            <div class="diet-plan-card">
+                <h3>Recommended Diet</h3>
+                <p id="generalDietText">Please select a symptom on the home page first.</p>
+                
+                <div class="meal-plan">
+                    <h3>Daily Meal Plan</h3>
+                    
+                    <div class="meal-section">
+                        <div class="meal-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="meal-details">
+                            <h4>Morning</h4>
+                            <ul id="morningMeals">
+                                <li>Select a symptom to see meal suggestions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="meal-section">
+                        <div class="meal-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="meal-details">
+                            <h4>Afternoon</h4>
+                            <ul id="afternoonMeals">
+                                <li>Select a symptom to see meal suggestions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="meal-section">
+                        <div class="meal-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <div class="meal-details">
+                            <h4>Evening & Night</h4>
+                            <ul id="eveningMeals">
+                                <li>Select a symptom to see meal suggestions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-gallery">
+                    <h3>Recommended Foods</h3>
+                    <div class="food-images">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" alt="Healthy Food" class="food-img">
+                        <img src="https://images.unsplash.com/photo-1521986329282-0436c1f1e212" alt="Healthy Food" class="food-img">
+                        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088" alt="Healthy Food" class="food-img">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tips-box">
+                <h3><i class="fas fa-lightbulb"></i> Helpful Tips</h3>
+                <ul>
+                    <li>Drink plenty of water throughout the day</li>
+                    <li>Eat smaller, more frequent meals if experiencing digestive issues</li>
+                    <li>Consider consulting with a nutritionist for personalized advice</li>
+                    <li>Keep a food diary to track how different foods affect your symptoms</li>
+                </ul>
+            </div>
+            
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Recommendations
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Rights reserved from WHO</p>
+    </footer>
+
+    <script src="recommendations.js"></script>
+    <script src="diet.js"></script>
+</body>
+</html>

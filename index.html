@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-heartbeat"></i> Healthcare Assistant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="medicine.html" id="medicineNav" class="disabled"><i class="fas fa-pills"></i> Medicine</a></li>
+                <li><a href="diet.html" id="dietNav" class="disabled"><i class="fas fa-utensils"></i> Diet</a></li>
+                <li><a href="yoga.html" id="yogaNav" class="disabled"><i class="fas fa-spa"></i> Yoga</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h2>Your Personal Healthcare Assistant</h2>
+            <p>Get personalized medicine recommendations, diet plans, and yoga asanas based on your symptoms</p>
+        </div>
+
+        <section class="input-section">
+            <h2>Select Your Symptom</h2>
+            <select id="symptomDropdown">
+                <option value="">-- Select a Symptom --</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+            <button id="getRecommendationsBtn" class="primary-btn">Get Recommendations</button>
+        </section>
+
+        <section id="recommendations" style="display: none;">
+            <h2>Recommendations for: <span id="selectedSymptomText"></span></h2>
+            
+            <div class="recommendation-cards">
+                <div class="card" id="medicineCard">
+                    <div class="card-icon"><i class="fas fa-pills"></i></div>
+                    <h3>Medicine</h3>
+                    <p>View recommended medications and where to purchase them.</p>
+                    <button class="card-btn">View Details</button>
+                </div>
+                
+                <div class="card" id="dietCard">
+                    <div class="card-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>Diet Plan</h3>
+                    <p>Discover the ideal diet plan to help manage your symptoms.</p>
+                    <button class="card-btn">View Details</button>
+                </div>
+                
+                <div class="card" id="yogaCard">
+                    <div class="card-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Yoga Asanas</h3>
+                    <p>Learn beneficial yoga poses with guided videos.</p>
+                    <button class="card-btn">View Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Rights reserved from WHO</p>
+    </footer>
+
+    <script src="recommendations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
